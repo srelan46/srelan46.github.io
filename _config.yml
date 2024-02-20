@@ -1,6 +1,6 @@
 navbar_links:
   Home: '/'
-  About: '/about/'
-  Work Experience: '/work-experience/'
-  Education: '/education/'
-  Projects: '/projects/'
+  Skills: '/skills'
+  Work Experience: '/work-experience'
+  Education: '/education'
+  Projects: '/projects'
