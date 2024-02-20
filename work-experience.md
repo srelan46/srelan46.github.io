@@ -76,3 +76,13 @@ As a **Software Developer** within the Communications Business Unit at Oracle, m
 
 ### Conclusion
 My tenure at Oracle within the Communications Business Unit as a Software Developer was marked by significant contributions towards enhancing the VNFM product. Through a combination of technological expertise, collaborative effort, and a deep commitment to standards compliance, I played a part in advancing Oracle's offerings in the telecommunication domain.
+
+## EazyDiner
+### Tech Intern (Feb 2021 - Aug 2021)
+- Designed a Restaurant Booking Website leveraging ReactJS, MongoDB with NestJS (NodeJS) for handling server-side operations.
+- Technologies and Tools used: ReactJS, MongoDB, NestJS, NodeJS, Postman, Git, Material UI, Docker
+
+## Jacobs
+### GBS IT Intern (Jan 2021 - Apr 2021)
+- Developed on Jacobs App developing new UI features and components both using internal and external technologies.
+- Technologies and Tools used: Xamarin forms, C#, Prism framework, Visual Studio, NuGet package Manager.
