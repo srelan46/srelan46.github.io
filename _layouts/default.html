@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand-title">Sanchit Relan</div>
+    <nav>
+        <a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+        <a href="/about/" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
+        <a href="/work-experience/" class="{% if page.url == '/work-experience/' %}active{% endif %}">Work Experience</a>
+        <a href="/education" class="{% if page.url == '/education/' %}active{% endif %}">Education</a>
+        <a href="/projects/" class="{% if page.url == '/projects/' %}active{% endif %}">Projects</a>
+    </nav>
+</header>
+
+<main class="container">
+    {{ content }}
+</main>
+
+</body>
+</html>
