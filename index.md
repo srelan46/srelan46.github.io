@@ -12,11 +12,13 @@ I have a strong foundation in core CS principles, with expertise in Java, Python
 Feel free to message me on LinkedIn about potential collaborative opportunities on projects and research work.
 
 ### Linkedin 
-[Linkedin Link](https://www.linkedin.com/in/sanchit-relan/) :link:
+[Linkedin Link 🔗](https://www.linkedin.com/in/sanchit-relan/)
 
 ### Github
-[Github Link](https://github.com/srelan46) :link:
+[Github Link 🔗](https://github.com/srelan46)
 
 ### Leetcode
-[Leetcode Link](https://leetcode.com/srelan/) :link:
+[Leetcode Link 🔗](https://leetcode.com/srelan/)
 
+### Stack Overflow
+[StackOverflow Link 🔗](https://stackoverflow.com/users/8817925/sanchit-relan)
