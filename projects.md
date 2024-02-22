@@ -26,7 +26,7 @@ _March 2019_
 Solution helped in decreasing the detection time and response time by at least 50%.
 
 ## Smart Home Automation System
-January 2019_
+_January 2019_
 - **Description**:Built IoT solution for automation for home with sensors: LDR, LM35, DHT11 sensors. The solution decreased the latency and
 response time by 20% compared to existing solutions.
 - **Technologies and Tools used**: Arduino and ESP8266 microcontroller, Thing speak IOT platform.
