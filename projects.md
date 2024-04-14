@@ -4,7 +4,6 @@ title: Projects
 ---
 
 # Projects
-
 ## Gomoku AI
 _December 2023_
 - **Description**: Developed a Gomoku-playing artificial intelligence, using a sophisticated six-layer sequential Convolutional Neural Network (CNN) with ReLU activation function and a tailored heuristic minimax algorithm to enhance game state evaluation and move prediction.
@@ -25,7 +24,6 @@ Spring Boot framework in Java, with emphasizes on the principles of Object Orien
     - **Design Patterns:** Utilizes Singleton and Template patterns for optimal object management.
     - **Deployment:** Ready for deployment with Docker Compose.
 - [Post Link](https://www.linkedin.com/posts/sanchit-relan_github-srelan46usedbookstorewebapp-activity-7144340885059616768-84Vy?utm_source=share&utm_medium=member_desktop) \| [Project Link](https://github.com/srelan46/UsedBookStoreWebApp/tree/main)
-
 
 ## Evoke - AI-Based Journal and Meditation App
 _June 2023_
