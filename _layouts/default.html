@@ -98,14 +98,15 @@ layout: default
                     <h3>{{ education.degree }}</h3>
                     <h4>{{ education.institution }}</h4>
                     <span class="period">{{ education.period }}</span>
-                    <div class ="education-courses">
+                    <div class="education-courses">
                         <h4>Courses</h4>
                         <ul>
                             {% for course in education.courses %}
-                            <li>{{ course }}</li>
+                            <li class="course">{{ course }}</li>
                             {% endfor %}
                         </ul>
                     </div>
+                    <button class="expand-education">Show More</button>
                 </div>
                 {% endfor %}
             </div>
@@ -199,6 +200,30 @@ layout: default
             }
         }
     }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const educationItems = document.querySelectorAll('.education-item');
+
+        educationItems.forEach(item => {
+            const courses = item.querySelectorAll('.course');
+            const expandButton = item.querySelector('.expand-education');
+
+            if (courses.length > 5) {
+                for (let i = 5; i < courses.length; i++) {
+                    courses[i].classList.add('hidden');
+                }
+            } else {
+                expandButton.style.display = 'none';
+            }
+
+            expandButton.addEventListener('click', function() {
+                for (let i = 5; i < courses.length; i++) {
+                    courses[i].classList.toggle('hidden');
+                }
+                expandButton.textContent = expandButton.textContent === 'Show More' ? 'Show Less' : 'Show More';
+            });
+        });
+    });
     </script>
 </body>
 </html>

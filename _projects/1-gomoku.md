@@ -29,4 +29,3 @@ detailed_description: |
   - Trained on extensive dataset of past game plays
 
 ---
-
