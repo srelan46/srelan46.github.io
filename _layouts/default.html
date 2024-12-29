@@ -94,7 +94,14 @@ layout: default
                     <h3>{{ education.degree }}</h3>
                     <h4>{{ education.institution }}</h4>
                     <span class="period">{{ education.period }}</span>
-                    <p>{{ education.description }}</p>
+                    <div class ="education-courses">
+                        <h4>Courses</h4>
+                        <ul>
+                            {% for course in education.courses %}
+                            <li>{{ course }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
                 {% endfor %}
             </div>

@@ -1,6 +1,112 @@
-navbar_links:
-  Home: '/'
-  Skills: '/skills'
-  Work Experience: '/work-experience'
-  Education: '/education'
-  Projects: '/projects'
+# Site Settings
+title: Sanchit Relan
+description: Software Engineer, Software Developer
+author: Sanchit Relan
+tagline: Software Engineer | Software Developer
+
+# Social Media Links
+social:
+  github: https://github.com/srelan46
+  linkedin: https://www.linkedin.com/in/sanchit-relan/
+  email: sanchitrelan.work@gmail.com
+
+# Profile Settings
+avatar: /assets/images/profile.jpg
+
+# SEO Settings
+url: "https://yourdomain.com"
+baseurl: ""
+permalink: /blog/:title/
+timezone: America/New_York
+
+# Blog Settings
+show_excerpts: true
+excerpt_separator: <!--more-->
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+  jobs:
+    output: true
+    permalink: /jobs/:title/
+  tech_skills:
+    output: true
+    permalink: /tech_skills/:title/
+  education:
+    output: true
+    permalink: /education/:title/
+  
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Custom Categories/Tags
+categories: [Tutorials, Projects, HomeLab, Tech]
+tags:
+  - homelab
+  - hardware
+  - kubernetes
+  - docker
+  - rancher
+  - self-hosted
+  - proxmox
+  - portainer
+  - linux
+  - k3s
+
+# Analytics (optional)
+google_analytics: # UA-XXXXXXXX-X
+
+# Comments (optional)
+disqus:
+  shortname: # your-disqus-shortname
+
+# Sass Settings
+sass:
+  style: compressed
+
+# Additional Features
+show_date: true
+reading_time: true
+words_per_minute: 200
