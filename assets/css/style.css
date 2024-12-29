@@ -1,152 +1,127 @@
-/* General Resets */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
+:root {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --accent: #007bff;
+  --sidebar-width: 300px;
+}
+
+* {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
 
-/* Base styles */
 body {
-  line-height: 1.6;
-  color: #333;
-  padding: 20px;
-  margin: auto;
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   line-height: 1.6;
 }
 
-/* Headings */
-
-h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
-  color: #0056b3;
+.sidebar {
+  position: fixed;
+  width: var(--sidebar-width);
+  height: 100vh;
+  background-color: var(--bg-secondary);
+  padding: 2rem;
+  overflow-y: auto;
 }
 
-h2 {
-  color: #0056b3;
-  font-size: 24px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-h3 {
-  color: #1f80e1;
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-/* Paragraphs and lists */
-p,
-ul {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-/* Navigation bar styles */
-.navbar {
-  background-color: #333399; /* Dark blue background */
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
+.profile {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.navbar a:hover,
-.navbar a:focus {
-  background-color: #ddd;
-  color: black;
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
-.navbar a.active {
-  background-color: #4caf50;
+.site-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.brand-title {
-  color: white;
-  padding: 14px 20px;
+.tagline {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.social-link {
+  color: var(--text-secondary);
   text-decoration: none;
-  font-weight: bold;
+  transition: color 0.3s;
 }
 
-/* Container */
-.container {
-  width: 80%;
-  margin: auto;
-  padding: 20px;
+.social-link:hover {
+  color: var(--accent);
 }
 
-/* Job titles and company styling */
-.job-title {
-  font-weight: bold;
-  font-size: 22px;
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.company {
-  font-style: italic;
-  color: #666;
-  margin-bottom: 5px;
-}
-
-/* Styles for key accomplishments and tools */
-.key-point {
-  background-color: #f2f2f2;
-  border-left: 4px solid #0056b3;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-/* List of technologies */
-.tech-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.tech-list li {
-  display: inline;
-  margin-right: 10px;
-  background-color: #e7f1ff;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-/* Link styling */
-a {
-  color: #0056b3;
+.nav-item {
+  color: var(--text-primary);
   text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-a:hover {
-  text-decoration: underline;
+.nav-item:hover {
+  background-color: var(--accent);
 }
 
-strong {
-    font-weight: bold;
+.content {
+  margin-left: var(--sidebar-width);
+  padding: 2rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.post-card {
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.post-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 1.5rem;
+}
+
+.post-meta {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+  color: var(--text-secondary);
+}
+
+.tag {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
 }

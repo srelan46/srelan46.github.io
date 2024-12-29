@@ -9,6 +9,10 @@ layout: default
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/education.css">
+    <link rel="stylesheet" href="/assets/css/tech.css">
+    <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="stylesheet" href="/assets/css/career.css">
 </head>
 <body class="dark-theme">
     <div class="sidebar">
@@ -131,7 +135,20 @@ layout: default
                             {% if project.github %}
                             <a href="{{ project.github }}" class="button">GitHub</a>
                             {% endif %}
+                            {% if project.linkedin %}
+                            <a href="{{project.linkedin}}" class="button">LinkedIn</a>
+                            {% endif %}
+                            <button class="button" onclick="openModal('{{ project.title | slugify }}')">Details</button>
                         </div>
+                    </div>
+                </div>
+        
+                <!-- Modal -->
+                <div id="modal-{{ project.title | slugify }}" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('{{ project.title | slugify }}')">&times;</span>
+                        <h2>{{ project.title }}</h2>
+                        <p>{{ project.detailed_description | markdownify}}</p>
                     </div>
                 </div>
                 {% endfor %}
@@ -162,5 +179,26 @@ layout: default
             </div>
         </section>
     </main>
+    <script>
+    function openModal(title) {
+        var modal = document.getElementById('modal-' + title.toLowerCase().replace(/ /g, '-'));
+        modal.style.display = 'flex';
+    }
+
+    function closeModal(title) {
+        var modal = document.getElementById('modal-' + title.toLowerCase().replace(/ /g, '-'));
+        modal.style.display = 'none';
+    }
+
+    // Close the modal when clicking outside of it
+    window.onclick = function(event) {
+        var modals = document.getElementsByClassName('modal');
+        for (var i = 0; i < modals.length; i++) {
+            if (event.target == modals[i]) {
+                modals[i].style.display = 'none';
+            }
+        }
+    }
+    </script>
 </body>
 </html>
