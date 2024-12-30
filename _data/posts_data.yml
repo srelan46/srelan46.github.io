@@ -1,0 +1,31 @@
+---
+posts:
+- title: "“Build ChatGPT for Free” AI-Powered RAG ChatBot using LLAMA 3.1 405B and
+    NVIDIA NIM"
+  link: https://medium.com/@srelan1/build-a-free-ai-chatbot-using-llama-3-1-405b-d3bf5e6fa446?source=rss-9b6b4f00642b------2
+  date: 2024-07-28 03:39:57.000000000 +00:00
+  author: sanchit relan
+  tags:
+  - llama-3-1-405b
+  - nvidia
+  - large-language-models
+  - retrieval-augmented-gen
+  - chatbots
+  image: https://cdn-images-1.medium.com/max/1024/1*OKjTRvCzJtj5x-Rvn0ps7g.jpeg
+  excerpt: 'Meta just released their new version of state-of-the-art Large Language
+    Models named Llama 3.1. This latest iteration of models builds upon the success
+    of its predecessors, promising enhanced general '
+- title: Building a Personalized News Aggregator Using LLama3, LangChain and Ollama
+  link: https://medium.com/@srelan1/building-a-personalized-news-aggregator-using-llama3-langchain-and-ollama-139617cf3891?source=rss-9b6b4f00642b------2
+  date: 2024-05-07 04:22:11.000000000 +00:00
+  author: sanchit relan
+  tags:
+  - ollama
+  - ai
+  - langchain
+  - retrieval-augmented-gen
+  - llama-3
+  image: https://cdn-images-1.medium.com/max/1024/1*mo2ZUL9CYLvM3dYm7t3Hfg.png
+  excerpt: Introduction:In today’s world, staying updated with the latest news can
+    be challenging due to information overload. With New AI tools it is becoming little
+    easier but still its difficult to find relev
