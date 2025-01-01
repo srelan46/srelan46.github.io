@@ -101,3 +101,58 @@ body {
   border-radius: 4px;
   font-size: 0.8rem;
 }
+
+/* Button styles */
+.button {
+  background-color: #292929;
+  color: #ffffff;
+  border: none;
+  padding: 3px 6px;
+  border-radius: 2px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #3a3a3a;
+}
+
+/* Style the anchor tags */
+.project-links a {
+  text-decoration: none;
+  background-color: #292929;
+  border-radius: 2px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.project-links a:hover { 
+  background-color: #3a3a3a;
+} 
+
+.social-name-icon.linkedin{
+  width: 60px;  
+  height: 15px;
+}
+.social-name-icon.github {
+  margin-top: 2px;
+  width: 50px;
+  height: 20px;
+}
+
+.social-icon {
+  width: 44px;
+  height: 35px;
+  background-color: #292929;
+  padding: 3px 6px;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  background-color: #3a3a3a;
+}
