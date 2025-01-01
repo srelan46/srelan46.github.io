@@ -25,13 +25,19 @@ layout: default
             <p class="tagline">{{ site.tagline }}</p>
             <div class="social-links">
                 {% if site.social.github %}
-                <a href="{{ site.social.github }}" class="social-link">GitHub</a>
+                <a href="{{ site.social.github }}" class="social-link">
+                    <img src="/assets/images/github-logo-white.svg" alt="GitHub" class="social-icon">
+                </a>
                 {% endif %}
                 {% if site.social.linkedin %}
-                <a href="{{ site.social.linkedin }}" class="social-link">LinkedIn</a>
+                <a href="{{ site.social.linkedin }}" class="social-link">
+                    <img src="/assets/images/linkedin-logo.png" alt="LinkedIn" class="social-icon">
+                </a>
                 {% endif %}
                 {% if site.social.email %}
-                <a href="mailto:{{ site.social.email }}" class="social-link">Email</a>
+                <a href="mailto:{{ site.social.email }}" class="social-link">
+                    <img src="/assets/images/email-logo.svg" alt="email" class="social-icon">
+                </a>
                 {% endif %}
             </div>
         </div>
@@ -121,9 +127,6 @@ layout: default
                 {% assign sorted_projects = site.projects | sort: 'name' %}
                 {% for project in sorted_projects %}
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="{{ project.image }}" alt="{{ project.title }}">
-                    </div>
                     <div class="project-info">
                         <h3>{{ project.title }}</h3>
                         <p>{{ project.description }}</p>
@@ -133,16 +136,20 @@ layout: default
                             {% endfor %}
                         </div>
                         <div class="project-links">
+                            <button class="button" onclick="openModal('{{ project.title | slugify }}')">Details</button>
                             {% if project.demo %}
                             <a href="{{ project.demo }}" class="button">Demo</a>
                             {% endif %}
                             {% if project.github %}
-                            <a href="{{ project.github }}" class="button">GitHub</a>
+                            <a href="{{ project.github }}">
+                                <img src="/assets/images/github-name-logo.png" alt="GitHub" class="social-name-icon github">
+                            </a>
                             {% endif %}
                             {% if project.linkedin %}
-                            <a href="{{project.linkedin}}" class="button">LinkedIn</a>
+                            <a href="{{project.linkedin}}">
+                                <img src="/assets/images/linkedin-name-logo.png" alt="LinkedIn" class="social-name-icon linkedin">
+                            </a>
                             {% endif %}
-                            <button class="button" onclick="openModal('{{ project.title | slugify }}')">Details</button>
                         </div>
                     </div>
                 </div>
@@ -227,6 +234,16 @@ layout: default
             });
         });
     </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGV2ND2MRX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZGV2ND2MRX');
+    </script>
+
 </body>
 
 </html>
