@@ -1,10 +1,11 @@
 ---
 title: "Frameworks"
 skills:
+    - cypress
     - Nginx 
-    - Pywinauto 
     - Flask 
     - Spring Boot
+    - Pywinauto 
     - NextJS 
     - NodeJS
 ---

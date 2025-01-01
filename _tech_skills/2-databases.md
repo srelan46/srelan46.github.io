@@ -5,5 +5,6 @@ skills:
     - Oracle 11g 
     - MongoDB 
     - MYSQL 
-    - SQLite 
+    - SQLite
+    - ChromaDB 
 ---
