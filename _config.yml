@@ -1,6 +1,53 @@
-navbar_links:
-  Home: '/'
-  Skills: '/skills'
-  Work Experience: '/work-experience'
-  Education: '/education'
-  Projects: '/projects'
+# Site Settings
+title: Sanchit Relan
+description: Software Engineer, Software Developer
+author: Sanchit Relan
+tagline: Software Engineer | Software Developer
+
+# Social Media Links
+social:
+  github: https://github.com/srelan46
+  linkedin: https://www.linkedin.com/in/sanchit-relan/
+  email: sanchitrelan.work@gmail.com
+
+# Profile Settings
+avatar: /assets/images/profile.jpg
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+  jobs:
+    output: true
+    permalink: /jobs/:title/
+  tech_skills:
+    output: true
+    permalink: /tech_skills/:title/
+  education:
+    output: true
+    permalink: /education/:title/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Analytics (optional)
+google_analytics: 
+  id: G-ZGV2ND2MRX

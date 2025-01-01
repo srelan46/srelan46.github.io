@@ -10,15 +10,3 @@ Highly motivated and ambitious Computer Science currently pursuing a master's de
 I have a strong foundation in core CS principles, with expertise in Java, Python, Openstack Cloud, SQL, Test Automation, Docker, Nginx.
 
 Feel free to message me on LinkedIn about potential collaborative opportunities on projects and research work.
-
-### Linkedin 
-[Linkedin Link 🔗](https://www.linkedin.com/in/sanchit-relan/)
-
-### Github
-[Github Link 🔗](https://github.com/srelan46)
-
-### Leetcode
-[Leetcode Link 🔗](https://leetcode.com/srelan/)
-
-### Stack Overflow
-[StackOverflow Link 🔗](https://stackoverflow.com/users/8817925/sanchit-relan)

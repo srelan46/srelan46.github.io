@@ -1,0 +1,64 @@
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.tech-item {
+  background-color: #2d2d2d;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.tech-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tech-item h4 {
+  margin-top: 0;
+  font-size: 1.4em;
+  color: #ffffff;
+}
+
+.tech-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  flex-grow: 1;
+}
+
+.tech-item ul li {
+  background-color: #2d2d2d;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 5px 0;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.tech-item .tech-footer {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.tech-item .tech-footer a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+a .tech-item .tech-footer a:hover {
+  text-decoration: underline;
+}

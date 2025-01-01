@@ -1,0 +1,25 @@
+
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    border-left: 2px solid var(--accent);
+  }
+  
+.timeline-content {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      position: static;
+      width: 100%;
+      height: auto;
+  }
+  
+  .content {
+      margin-left: 0;
+  }
+}
